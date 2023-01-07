@@ -1,20 +1,20 @@
 import numpy as np
 import pandas as pd
 from openpyxl import load_workbook
-df_1 = pd.read_excel("matrix0106.xlsx", sheet_name="Sheet2")
+
+df_1 = pd.read_excel("matrix.xlsx", sheet_name="Sheet2")
 df_1 = df_1.iloc[0:5,1:5]
 print(df_1)
 A1 = df_1.values
 
-df_2 = pd.read_excel("matrix0106.xlsx", sheet_name="Sheet1")
+df_2 = pd.read_excel("matrix.xlsx", sheet_name="Sheet1")
 print(df_2)
 A2 = df_2.values
 
-df_3 = pd.read_excel("matrix0106.xlsx", sheet_name="Sheet3")
+df_3 = pd.read_excel("matrix.xlsx", sheet_name="Sheet3")
 df_3 = df_3.iloc[1:17,2:17]
 print(df_3)
 A3 = df_3.values
-
 
 #weight = pd.DataFrame()
 
